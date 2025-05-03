@@ -55,7 +55,7 @@ class BottomNavItems extends StatelessWidget {
                         //     : Colors.black,
                         fontSize: 12.sp,
                         fontWeight: state == currentIndex
-                            ? FontWeight.w500
+                            ? FontWeight.w600
                             : FontWeight.w400,
                       ),
                     ),

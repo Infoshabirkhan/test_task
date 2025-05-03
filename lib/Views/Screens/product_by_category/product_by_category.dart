@@ -51,11 +51,11 @@ class _ProductByCategoryScreenState extends State<ProductByCategoryScreen> {
               },
             ),
             10.verticalSpace,
-            BlocBuilder<GetAllProductCubit, GetAllProductState>(
+            BlocBuilder<ProductByCategoryCubit, ProductByCategoryState>(
               builder: (context, state) {
-                if (state is GetAllProductLoaded) {
+                if (state is ProductByCategoryLoaded) {
                   return MyText(
-                    "${state.model.total} results found",
+                    "${state.model.products.length} results found",
                     color: Color(0xff0C0C0C).withAlpha(80),
                     fontSize: 10.sp,
                   );

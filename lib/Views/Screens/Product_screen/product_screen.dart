@@ -29,7 +29,6 @@ class _ProductScreenState extends State<ProductScreen> {
     context.read<SearchCubit>().reset();
 
     pagingController.addPageRequestListener((pageKey) {
-      print('=====${pageKey}');
       context.read<GetAllProductCubit>().getProducts(page: pageKey);
     });
     // TODO: implement initState
